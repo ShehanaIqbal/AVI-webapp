@@ -43,11 +43,24 @@
         }
 
     //////////////////////////////////////////////////////
-        public function checkAdminPsw($password){
-            if ($password=='admin123' ){
-                return true;
+        public function checkAdminPsw($password,$name){
+            if ($name=='avi-admin-$#1'){
+                if ($password=='admin123' ){
+                    $_SESSION['currentUser']=$name;
+                    return true;
+                }else{
+                    return false;
+                }
             }else{
-                return false;
+                $password=password_hash($password, PASSWORD_BCRYPT );
+                $query="SELECT * from admin where username='$name' and password='$password'";
+                $result=$this->controller->runQuery($query);
+                if ($result==1){
+                    $_SESSION=$name;
+                    return true;
+                }else{
+                    return false;
+                }
             }
         }
 

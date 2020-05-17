@@ -80,7 +80,8 @@
 
         public function loginAdmin(){
             $psw=$_POST['password'];
-            $this->myLogger = new admin($psw);
+            $user=$_POST['username'];
+            $this->myLogger = new admin($psw,$user);
             $result=$this->myLogger->loginAdmin();
             if ($result){
                 $_SESSION['set']="set";

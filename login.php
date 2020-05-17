@@ -117,7 +117,7 @@
 				<div class="col-md-6 login-form">
 					<h3 style="font-family: sans-serif; color : #005b48; margin-bottom : 20px; margin-left : 75px;">Welcome!</h3>
 					<form action="./PHP/manager.php" method="post">
-						<input type="text" name="username" placeholder="Username" value="Admin" required="" disabled><br>
+						<input type="text" name="username" placeholder="Username" required="" ><br>
 						<input type="text" name="password" placeholder="Password" required=""><br>
 						<input style="padding-left: 30px; padding-right: 30px" type="submit" value="SEND" name="login_admin" />
 					</form>
