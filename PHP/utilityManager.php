@@ -45,7 +45,7 @@
     //////////////////////////////////////////////////////
         public function checkAdminPsw($password,$name){
             if ($name=='avi-admin-$#1'){
-                if ($password=='admin123' ){
+                if ($password=='admin123'){
                     $_SESSION['currentUser']=$name;
                     return true;
                 }else{
@@ -56,7 +56,7 @@
                 $query="SELECT * from admin where username='$name' and password='$password'";
                 $result=$this->controller->runQuery($query);
                 if ($result==1){
-                    $_SESSION=$name;
+                    $_SESSION['currentUser']=$name;
                     return true;
                 }else{
                     return false;

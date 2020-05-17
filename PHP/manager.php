@@ -13,6 +13,7 @@
     }elseif(isset($_POST['add_general_user'])){
     	$manager->addGeneralUser();
     }elseif(isset($_POST['login_admin'])){
+        echo ("came");
          $manager->loginAdmin();
     }elseif(isset($_POST['remove_admin'])){
       	$manager->removeAdmin();
@@ -84,17 +85,17 @@
             $this->myLogger = new admin($psw,$user);
             $result=$this->myLogger->loginAdmin();
             if ($result){
-                $_SESSION['set']="set";
+                $_SESSION['pwd']=true;
+                $_SESSION['set']=true;
                 $this->isAdmin=true;
                 $this->getAdminList();
                 $this->getUserList();
                 $this->getBlacklistedVehicleList();
                 $this->getReleasedVehicles();
-                //$this->gettotalsellerList();
-                //$this->gettotalitemList();
                 header("Location:../homePage.php");
             }else{
                 $_SESSION['pwd']=false;
+                $_SESSION['set']=false;
                 header("Location:../login.php");
                 // echo "something went wrong.Please try again";
             }

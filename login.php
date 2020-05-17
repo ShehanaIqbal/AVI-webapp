@@ -85,25 +85,6 @@
 		</script>
 
 	</div>
-
-	<!-- <div class="content">
-		<div class="mail row">
-			<div class="col-xs-6" style="margin-top:80px; margin-left:50px;">
-				<div class="container login">
-					<img src="images/avatar.png" alt="AVATAR" style="width:200px;height:200px; margin-left : 100px;">
-				</div>
-				<div class="col-md-6 contact-form">
-					<h3 style="font-family: sans-serif; color : #002d24">Welcome!</h3>
-					<form action="./PHP/manager.php" method="post">
-						<input type="text" name="username" placeholder="Username" value="Admin" required="" disabled>
-						<input type="text" name="password" placeholder="Password" required="">
-						<input style="padding-left: 30px; padding-right: 30px" type="submit" value="SEND" name="login_admin" />
-					</form>
-				</div>
-			</div>
-			<div class="col-xs-6">
-				<img src="images/login.png" alt="login image" style="width:500px;height:350px;">
-				<p>fok</p> -->
 			</div>
 
 		</div> 
@@ -117,18 +98,14 @@
 				<div class="col-md-6 login-form">
 					<h3 style="font-family: sans-serif; color : #005b48; margin-bottom : 20px; margin-left : 75px;">Welcome!</h3>
 					<form action="./PHP/manager.php" method="post">
-						<input type="text" name="username" placeholder="Username" required="" ><br>
+						<input type="text" name="username" placeholder="Username" required=""><br>
 						<input type="text" name="password" placeholder="Password" required=""><br>
 						<input style="padding-left: 30px; padding-right: 30px" type="submit" value="SEND" name="login_admin" />
 					</form>
 				</div>
 			</div>
 		</div>
-		<!-- <?php 
-			if($_SESSION['pwd']==false){
-				echo "<p>Invalid Password</p>";
-			}
-		?>  -->
+		
 		<div class="col-xs-6">
 			<img src="images/login.png" alt="login image" style="width:500px;height:350px; margin-top : 200px">
 
@@ -139,31 +116,7 @@
 	<!-- //container -->
 	<!-- //mail -->
 	<!--footer-->
-	<div class="footer-section">
-		<div class="container">
-			<div class="footer-top">
-				<p>Copyright &copy; 2015 <span>Car Racing.</span> All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-			</div>
-			<script type="text/javascript">
-				$(document).ready(function() {
-					/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
 
-					$().UItoTop({
-						easingType: 'easeOutQuart'
-					});
-
-				});
-			</script>
-			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-		</div>
-	</div>
 </body>
 
 </html>

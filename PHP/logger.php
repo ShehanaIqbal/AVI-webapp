@@ -10,9 +10,8 @@
     	}
 
     	public function loginAdmin(){
-			echo ("came");
     		$isCorrect=$this->utility->checkAdminPsw($this->name,$this->password);
-    		if ($isCorrect=="admin"){
+    		if ($isCorrect){
 				return true;
     		}else{
     			return false;
