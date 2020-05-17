@@ -100,7 +100,7 @@
 					<form action="./PHP/manager.php" method="post">
 						<input type="text" name="username" placeholder="Username" required=""><br>
 						<input type="text" name="password" placeholder="Password" required=""><br>
-						<input style="padding-left: 30px; padding-right: 30px" type="submit" value="SEND" name="login_admin" />
+						<input style="padding-left: 30px; padding-right: 30px" type="submit" value="SEND" name="login_admin"/>
 					</form>
 				</div>
 			</div>
@@ -113,9 +113,6 @@
 		<div class="clearfix"> </div>
 
 	</div>
-	<!-- //container -->
-	<!-- //mail -->
-	<!--footer-->
 
 </body>
 
